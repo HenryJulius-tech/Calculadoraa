@@ -2,7 +2,8 @@
 #cristian miranda
 #diego sanjuan
 #marleinis orozco
-
+#Antonio bravo 
+#Brayan Amaya
 def suma(num1, num2):
     
     pass  
