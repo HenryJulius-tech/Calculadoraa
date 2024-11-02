@@ -17,8 +17,12 @@ def multiplicacion(num1, num2):
     return num1 * num2
 
 def division(num1, num2):
-
-    pass  
+   
+    if num2 != 0:
+        return num1 / num2
+    else:
+        return "Error: División por cero no permitida."
+    
 
 def potencia(num1, num2):
    
@@ -52,3 +56,8 @@ if operacion in ["suma", "resta", "multiplicacion", "division", "potencia"]:
     elif operacion == "resta":
         resultado = resta(num1, num2)
         print("Resultado de la resta:", resultado)
+
+        # Operacion division - Antonio Bravo
+    elif operacion == "division":
+        resultado = division(num1, num2)
+        print("Resultado de la division:", resultado)
