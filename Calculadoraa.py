@@ -6,15 +6,15 @@
 #Brayan Amaya
 def suma(num1, num2):
     
-    pass  
+    return num1 + num2 
 
 def resta(num1, num2):
     
-    pass  
+    return num1 - num2
 
 def multiplicacion(num1, num2):
     
-    pass  
+    return num1 * num2
 
 def division(num1, num2):
 
@@ -37,3 +37,18 @@ operacion = input("Ingrese la operación deseada: ").lower()
 if operacion in ["suma", "resta", "multiplicacion", "division", "potencia"]:
     num1 = int(input("Ingrese el primer número entero: "))
     num2 = int(input("Ingrese el segundo número entero: "))
+
+    # Operacion suma - Cristian Miranda
+    if operacion == "suma":
+        resultado = suma(num1, num2)
+        print("Resultado de la suma:", resultado)
+
+#Operacion multiplicacion - Marleinis Orozco
+    elif operacion == "multiplicacion":
+        resultado = multiplicacion(num1, num2)
+        print("Resultado de la multiplicacion:", resultado)
+
+        # Operacion resta - Diego San Juan
+    elif operacion == "resta":
+        resultado = resta(num1, num2)
+        print("Resultado de la resta:", resultado)
