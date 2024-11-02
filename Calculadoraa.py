@@ -6,7 +6,7 @@
 #Brayan Amaya
 def suma(num1, num2):
     
-    pass  
+    return num1 + num2 
 
 def resta(num1, num2):
     
