@@ -25,8 +25,11 @@ def potencia(num1, num2):
     return num1 ** num2
 
 def raiz_cuadrada(num1):
-    
-    pass  
+        
+    if num1 >= 0:
+        return num1 ** 0.5
+    else:
+        return "Error: No se puede calcular la raíz cuadrada de un número negativo."
 
 print("Bienvenido a la calculadora")
 print("Elija una operación escribiendo su nombre:")
@@ -52,3 +55,13 @@ if operacion in ["suma", "resta", "multiplicacion", "division", "potencia"]:
     elif operacion == "potencia":
         resultado = potencia(num1, num2)
         print("Resultado de la potencia:", resultado)
+
+        
+# Operacion raiz cuadrada - Antonio bravo
+elif operacion == "raiz cuadrada":
+    num1 = int(input("Ingrese el número entero: "))
+    resultado = raiz_cuadrada(num1)
+    print("Resultado de la raiz cuadrada:", resultado)
+
+else:
+    print("Operación no válida")
