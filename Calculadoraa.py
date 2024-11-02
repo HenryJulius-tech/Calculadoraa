@@ -14,7 +14,7 @@ def resta(num1, num2):
 
 def multiplicacion(num1, num2):
     
-    pass  
+    return num1 * num2
 
 def division(num1, num2):
 
@@ -22,7 +22,7 @@ def division(num1, num2):
 
 def potencia(num1, num2):
    
-    pass  
+    return num1 ** num2
 
 def raiz_cuadrada(num1):
     
@@ -42,3 +42,13 @@ if operacion in ["suma", "resta", "multiplicacion", "division", "potencia"]:
     if operacion == "suma":
         resultado = suma(num1, num2)
         print("Resultado de la suma:", resultado)
+
+#Operacion multiplicacion - Marleinis Orozco
+    elif operacion == "multiplicacion":
+        resultado = multiplicacion(num1, num2)
+        print("Resultado de la multiplicacion:", resultado)
+
+# Operacion potencia - Brayan Amaya
+    elif operacion == "potencia":
+        resultado = potencia(num1, num2)
+        print("Resultado de la potencia:", resultado)
